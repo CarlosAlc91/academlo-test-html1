@@ -1,0 +1,124 @@
+/* RESETING CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Bebas Neue', sans-serif;;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* 
+NAV BAR
+*/
+
+.nav__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #2f55a4;
+  color: #ffffff;
+}
+
+.nav__links a {
+  color: #ffffff;
+}
+
+/* LOGO */
+.logo {
+  font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.nav__menu {
+  display: flex;
+  gap: 1rem;
+  font-size: 18px;
+}
+
+.nav__menu li:hover {
+  background-color: #496ebd;
+  border-radius: 5px;
+  transition: .3s ease-in-out;
+}
+
+.nav__menu li {
+  padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.dropdown {
+  background-color: #5884e4;
+  padding: 1rem 0;
+  position: absolute;
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5rem 1rem;
+  width: 8rem;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #6f98f1;
+}
+
+.members:hover .dropdown {
+  display: block;
+  font-size: 12px;
+}
+
+/* 
+HEADER
+*/
+
+.header__h1 {
+  color: #3e3e3e;
+  text-align: center;
+  align-items: center;
+  border: 0;
+  padding: 30px 0;
+  font-size: 2.5rem;
+}
+
+/* ABOUT US */
+.abut__us {
+  text-align: center;
+  align-items: center;
+}
+
+.abut__us, .h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.abut__us, .p{
+  text-align: justify;
+  border: none;
+  padding: 0;
+}
