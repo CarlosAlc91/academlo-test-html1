@@ -1,5 +1,18 @@
 /* RESETING CSS */
 
+:root{
+  --primary-100:#805b00;
+  --primary-200:#b38835;
+  --primary-300:#ffe992;
+  --accent-100:#ffc941;
+  --accent-200:#926b00;
+  --text-100:#d3f1ff;
+  --text-200:#95cce7;
+  --bg-100:#023047;
+  --bg-200:#194058;
+  --bg-300:#365973;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +27,9 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Bebas Neue', sans-serif;;
+  font-family: 'Bebas Neue', sans-serif;
+  color: var(--text-100);
+
 }
 
 a {
@@ -25,6 +40,12 @@ li {
   list-style: none;
 }
 
+body {
+  background-color: var(--bg-100);
+  color: var(--text-200);
+  
+}
+
 /* 
 NAV BAR
 */
@@ -32,17 +53,19 @@ NAV BAR
 .nav__bar {
   position: sticky;
   top: 0;
-  bottom: 0;
+  bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #2f55a4;
+  background-color: var(--bg-200);
   color: #ffffff;
 }
 
 .nav__links a {
   color: #ffffff;
+  top: 20px;
+  bottom: 10px;
 }
 
 /* LOGO */
@@ -58,7 +81,7 @@ NAV BAR
 }
 
 .nav__menu li:hover {
-  background-color: #496ebd;
+  background-color: var(--bg-300);
   border-radius: 5px;
   transition: .3s ease-in-out;
 }
@@ -69,9 +92,9 @@ NAV BAR
 
 /* DROPDOWN MENU */
 .dropdown {
-  background-color: #5884e4;
+  background-color: var(--bg-200);
   padding: 1rem 0;
-  position: sticky;
+  position: absolute;
   display: none;
   border-radius: 8px;
   top: 35px;
@@ -79,6 +102,8 @@ NAV BAR
 
 .dropdown li + li {
   margin-top: 10px;
+  top: 20px;
+  bottom: 20px;
 }
 
 .dropdown li {
@@ -88,7 +113,7 @@ NAV BAR
 }
 
 .dropdown li:hover {
-  background-color: #6f98f1;
+  background-color: var(--bg-200);
 }
 
 .members:hover .dropdown {
@@ -101,27 +126,48 @@ HEADER
 */
 
 .header__h1 {
-  color: #3e3e3e;
   text-align: center;
   align-items: center;
-  border: 0;
+  /* border: 0; */
   padding: 30px 0;
-  font-size: 2.5rem;
+  font-size: 3rem;
+}
+
+.header__h2 {
+  text-align: center;
+  align-items: center;
+  /* border: 0; */
+  padding: 30px 0;
+  font-size: 3rem;
+}
+
+/* PARAGRAPH */
+.paragraph {
+  text-align: justify;
+  align-items: center;
+  border: none;
+  padding: 0px 70px;
+  font-size: 1.5rem;
+  
 }
 
 /* ABOUT US */
-.abut__us {
-  text-align: center;
+.about__us {
+  text-align: justify;
   align-items: center;
+  border: none;
+  border: 0;
+  padding: 20px;
+  
 }
 
-.abut__us, .h2 {
+.about__us .h2 {
   text-align: center;
   font-size: 2.5rem;
 }
 
-.abut__us, .p{
+/* .about__us.p{
   text-align: justify;
   border: none;
-  padding: 0;
-}
+  
+} */
