@@ -46,6 +46,15 @@ body {
   
 }
 
+footer {
+/*   /* position: fixed; */
+  /* text-align: center;
+  align-items: center;
+  margin-top: auto;
+  padding: 20px 0;
+   color: red; */ 
+}
+
 /* 
 NAV BAR
 */
@@ -171,3 +180,13 @@ HEADER
   border: none;
   
 } */
+
+/* FOOTER */
+
+.footer {
+  position: fixed;
+  text-align: center;
+  align-items: center;
+  margin-top: auto;
+  padding: 20px 0;
+}
