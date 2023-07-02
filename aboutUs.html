@@ -1,62 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&display=swap" rel="stylesheet">
-  
-  <title>About us</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-  <!-- NAV BAR -->
-  <nav class="nav__bar">
-  
-    <!-- LOGO -->
-    <div class="logo">Equipo 2</div>
-  
-    <!-- NAV MENU -->
-    <ul class="nav__links">
-  
-      <!-- NAV MENUS -->
-      <div class="nav__menu">
-        <li><a href="index.html" title="Home">Home</a></li>
-        <li><a href="aboutUs.html" title="about Us">About us</a></li>
-  
-        <li class="members">
-          <a href="members.html" title="members">Members</a>
-          <ul class="dropdown">
-            <li><a href="#yov">Yovanni Alexander Portilla</a></li>
-            <li><a href="#jua">Juan Betancourt</a></li>
-            <li><a href="#ald">Aldo Antonio Garcia Solórzano</a></li>
-            <li><a href="#jon">Jonathan David Hernandez Correa</a></li>
-            <li><a href="#ale">Alejandra velez</a></li>
-            <li><a href="#car">Carlos Manuel Alcantara Rodriguez</a></li>
-            <li><a href="#mig">Miguel Ángel Martínez Osorio</a></li>
-            <li><a href="#jes">Jesus Arturo Zaragoza Lopez</a></li>
-          </ul>
-        </li>
-  
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <!-- TITLE -->
+    <title>Actividad HTML Grupo 2</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/CSS/aboutUs.css">
+    <!-- FAVICON -->
+    <link rel="icon" href="assets/favicon/favicon.ico">
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+
+      <!-- NAVIGATION LIST -->
+      <div class="container">
+      
+        <!-- LOGO -->
+        <a href="" class="logo">
+          <img src="assets/img/logo.png" alt="fullstack_image" class="logo-img">
+          <h1 class="logo-title">
+            Practica <span class="logo-text">Introducción a HTML</span>
+          </h1>
+        </a>
+        
+        <!-- NAV BAR -->
+        <nav class="nav">
+          <a href="index.html" title="Home" class="nav-link">Home</a>
+          <a href="aboutUs.html" title="about Us" class="nav-link">About us</a>
+          <a href="members.html" title="members" class="nav-link">Members</a>
+        </nav>
       </div>
-    </ul>
-  
-  </nav>
-  
-  <!-- ABOUT US INFO -->
-  <div class="about__us">
-    <section id="about__us">
-      <h2 class="about__us h2">About us</h2>
-      <p class="about__us p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum consequatur itaque eaque
-        natus blanditiis esse omnis voluptates consectetur inventore, obcaecati, quia iste culpa voluptatem, tempora error
-        cupiditate ex iusto optio.</p>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+      <section class="hero">
+        <div class="overlay"></div>
+        <div class="container">
+          <h2 class="hero-title">
+            About us!
+          </h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus magni harum amet mollitia, quis fugit ab, tempore nisi aut iusto odio laudantium esse ipsum omnis, ratione doloremque praesentium quos id.</p>
+        </div>
       </section>
-    </div>
-    
-      <!-- FOOTER -->
-      <footer id="footer" class="footer">
-        <!-- NAVIGATION FOOTER -->
-        <p >grupo#2 &copy; 2023</p>
-      </footer>
-</body>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer">
+      <!-- NAVIGATION FOOTER -->
+      <p >grupo 2 &copy; 2023</p>
+    </footer>
+  </body>
 </html>
