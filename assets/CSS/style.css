@@ -128,7 +128,7 @@ img {
   justify-content: center;
   align-items: center;
   /* background-color: var(--bg-200); */
-  background-image: url('hero.jpg');
+  background-image: url(https://images.unsplash.com/photo-1579403124614-197f69d8187b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80);
   background-size: cover;
   background-position: center;
 }
