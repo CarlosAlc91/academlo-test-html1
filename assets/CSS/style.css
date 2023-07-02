@@ -32,6 +32,8 @@ body {
   * 1rem = 16px
   * 1.rem = 16px + 8px
   */
+  color: var(--text-100);
+  background-color: var(--bg-100);
   font-size: 1rem;
   /* *altura de la tipografia (interlineado) */
   line-height: 1.5;
@@ -42,6 +44,7 @@ body {
 /* *remover subrayado */
 a{
   text-decoration: none;
+  color: var(--text-200);
 }
 
 h1,
@@ -51,6 +54,7 @@ h4,
 h5,
 h6 {
   font-family: 'Quicksand', sans-serif;
+  color: var(--text-200);
 }
 
 img {
@@ -60,7 +64,7 @@ img {
   height: auto;
 }
 
-/* *HEADER */
+/* ***** HEADER *****/
 
 .header {
   border: 1px solid red;
@@ -101,6 +105,15 @@ img {
   gap: 1rem;
 }
 
+/* ***** HERO *****/
+
+.hero {
+  border: 1px solid wheat;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  background-image: url('hero.jpg');
+}
 
 
 
