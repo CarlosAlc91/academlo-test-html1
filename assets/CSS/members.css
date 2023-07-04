@@ -174,11 +174,32 @@ img {
 }
 
 
-/* FOOTER */
+/* ***** FOOTER *****/
+.footer .container {
+  padding: 0 0 30px;
+}
 
-.footer {
+.copy {
   text-align: center;
-  align-items: center;
-  margin-top: auto;
-  padding: 20px 0;
+}
+
+.copy-title {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--text-100);
+}
+
+.copy-text {
+  font-weight: 700;
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-link {
+  /* color: var(--text-100); */
+  color: var(--text-200);
 }
