@@ -32,8 +32,9 @@ body {
   * 1rem = 16px
   * 1.rem = 16px + 8px
   */
-  /* color: var(--text-100);
-  background-color: var(--bg-100); */
+
+  color: var(--text-100);
+  background-color: var(--bg-100);
   font-size: 1rem;
   /* *altura de la tipografia (interlineado) */
   line-height: 1.5;
@@ -44,7 +45,7 @@ body {
 /* *remover subrayado */
 a {
   text-decoration: none;
-  /* color: var(--text-100); */
+  color: var(--text-100);
 }
 
 h1,
@@ -71,7 +72,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   z-index: 5;
 }
 
@@ -121,7 +122,7 @@ img {
 
 .hero {
   position: relative;
-  border: 1px solid wheat;
+  /* border: 1px solid wheat; */
   min-height: 500px;
   display: flex;
   flex-direction: column;
@@ -144,7 +145,7 @@ img {
 
 .hero .container {
   position: relative;
-  border: 1px solid cyan;
+  /* border: 1px solid cyan; */
   text-align: center;
   color: #fff;
   /* color: var(--text-100); */
@@ -157,24 +158,111 @@ img {
   font-size: 2rem;
 }
 
-.img1 {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+/* ***** PAGE AND ARTICLES *****/
+
+.page {
+  padding: 50px 0;
 }
 
-.ul1 {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-
-/* FOOTER */
-
-/* .footer {
+/* page-title */
+.page-title {
+  font-size: 2rem;
   text-align: center;
-  align-items: center;
-  margin-top: auto;
-  padding: 20px 0;
-} */
+}
+
+/* articles */
+.articles {
+  /* siempre se trabaja en direccion columna */
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.article {
+  /* border: 2px solid red; */
+}
+
+/* article-body */
+.article-body {
+  /* separamos el body de los bordes */
+  padding: 0 20px 20px;
+}
+
+/* article-title */
+.article-title {
+ font-size: 1.5rem;
+ /* reduccion del margin inferior */
+ margin-bottom: 10px; 
+}
+
+/* article-link */
+.article-link {
+  background-color: var(--bg-300);
+  padding: 7px/*top-bottom*/ 12px/*left-right*/;
+  border-radius: 7px;
+  color: var(--text-100);
+  font-weight: 700;
+}
+
+/* ***** PARALLAX *****/
+.parallax {
+  /* para que no se mueva */
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-image: url(https://source.unsplash.com/random/1920x1080/?developers);
+  /* la imagen se queda fija */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* posicionar la ola en la parte de abajo */
+.wave {
+  position: absolute;
+  bottom: 0;
+  color: var(--bg-100);
+}
+
+/* ***** PROJECTS *****/
+
+.projects {
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 3rem;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+
+/* ***** FOOTER *****/
+.footer .container {
+  padding: 0 0 30px;
+}
+
+.copy {
+  text-align: center;
+}
+
+.copy-title {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--text-100);
+}
+
+.copy-text {
+  font-weight: 700;
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-link {
+  /* color: var(--text-100); */
+  color: var(--text-200);
+}
