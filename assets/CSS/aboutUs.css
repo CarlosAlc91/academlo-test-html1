@@ -95,7 +95,8 @@ img {
 
 .logo-img {
   width: 70px;
-  height: 50px;
+  height: 70px;
+  border-radius: 20px;
 }
 
 .logo-title {
@@ -162,8 +163,13 @@ img {
 
 
 /* ***** FOOTER *****/
+
+.footer {
+  padding-top: 25px;
+}
 .footer .container {
   padding: 0 0 30px;
+  max-width: 1024px;
 }
 
 .copy {
@@ -174,6 +180,7 @@ img {
   font-weight: 400;
   font-size: 1.2rem;
   color: var(--text-100);
+  margin-bottom: 10px;
 }
 
 .copy-text {
