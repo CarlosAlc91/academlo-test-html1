@@ -71,7 +71,6 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  /* border: 1px solid red; */
   z-index: 5;
   background-color: var(--bg-200);
 }
@@ -83,7 +82,8 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 20px;
+  max-width: 1024px;
 }
 
 .logo {
@@ -123,7 +123,6 @@ img {
 
 .hero {
   position: relative;
-  border: 1px solid wheat;
   min-height: 200px;
   display: flex;
   flex-direction: column;
@@ -143,12 +142,11 @@ img {
 
 .hero .container {
   position: relative;
-  border: 1px solid black;
   text-align: center;
   align-items: center;
-  color: #fff;
   color: var(--text-100);
-  padding: 25px 10px 0;
+  padding: 25px 10px 25px;
+  max-width: 1024px;
 
 }
 
@@ -156,34 +154,58 @@ img {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   color: var(--text-200);
-  border: 1px solid greenyellow;
 }
 
 /* ***** PAGE AND MEMBERS *****/
-
 .page {
-  padding: 50px 0;
+  /* separacion de la parte de arriba */
+  padding: 40px 0;
   max-width: 1024px;
 }
 
+/* ESTILOS AL TITULO */
 .page-title {
   font-size: 2rem;
   text-align: center;
 }
 
+/* ESTILOS A LAS TARJETAS */
 .members {
+  /* flex para que sea mas facil el movimiento de las tarjetas */
+  /* cuando se activa flex, la direccion es en filas */
   display: flex;
+  /* cuando se trabaja en mobile, siemore la direccion es en columnas */
   flex-direction: column;
-  gap: 2.5rem;
+  /* espaciado entre las tarjetas */
+  gap: 3rem;
+}
+
+.member {
+  /* border: 1px solid red; */
 }
 
 .member-info {
-  padding: 0 20px 20px;
+  /* top, left-right, bottom */
+  padding: 0 30px 10px;
+  margin-bottom: 20px;
+  text-align: justify;
 }
 
 .member-title {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-bottom: 10px;
+}
+
+/* SE AJUSTA EL PADDING PARA QUE LA DESCRIPCION Y LOS LOGROS ESTEN A LA MISMA MEDIDA */
+.member-ach {
+  padding: 0 10px 20px;
+  margin-top: 20px;
+}
+
+.member-ul {
+  text-align: justify;
+  /* margin-top: 10px; */
+  padding: 0 20px 0;
 }
 
 
@@ -221,4 +243,73 @@ img {
 .footer-link {
   /* color: var(--text-100); */
   color: var(--text-200);
+}
+
+/* ***** RESPONSIVENESS *****/
+/* minima anchura */
+@media screen and (min-width: 678px) {
+  /* ajustar el header */
+  .header .container {
+    /* la altura va a cambiar */
+    height: 130px;
+    flex-direction: row;
+    /* el header se separa del nav */
+    justify-content: space-between;
+  }
+
+  .nav-link {
+    font-size: 1.3rem;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-description {
+    font-size: 2rem;
+  }
+
+  .member{
+    /* imagens a un lado del texto */
+    display: flex;
+    align-items: center;
+  }
+
+  .page .container {
+    padding: 0 20px;
+  }
+
+  .member-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .member-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+  }
+  
+  .members .member:nth-child(odd) {
+    border: 2px solid red;
+    flex-direction: row-reverse;
+  }
+
+  .member-info {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header .container,
+  .hero .container,
+  .page,
+  .projects .container,
+  .footer .container {
+    margin: 0 auto;
+  }
 }
