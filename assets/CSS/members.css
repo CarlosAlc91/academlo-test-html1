@@ -95,7 +95,8 @@ img {
 
 .logo-img {
   width: 70px;
-  height: 50px;
+  height: 70px;
+  border-radius: 20px;
 }
 
 .logo-title {
@@ -122,16 +123,13 @@ img {
 
 .hero {
   position: relative;
-  /* border: 1px solid wheat; */
-  min-height: 500px;
+  border: 1px solid wheat;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--bg-100);
-  /* background-image: url(https://images.unsplash.com/photo-1579403124614-197f69d8187b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80);
-  background-size: cover;
-  background-position: center; */
 }
 
 /* .overlay {
@@ -145,7 +143,7 @@ img {
 
 .hero .container {
   position: relative;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   text-align: center;
   align-items: center;
   color: #fff;
@@ -157,26 +155,46 @@ img {
 .hero-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
+  color: var(--text-200);
+  border: 1px solid greenyellow;
 }
 
-.img1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
+/* ***** PAGE AND MEMBERS *****/
+
+.page {
+  padding: 50px 0;
+  max-width: 1024px;
 }
 
-.ul1 {
+.page-title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.members {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  gap: 1rem;
+  gap: 2.5rem;
+}
+
+.member-info {
+  padding: 0 20px 20px;
+}
+
+.member-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 
 /* ***** FOOTER *****/
+
+.footer {
+  padding-top: 25px;
+}
 .footer .container {
   padding: 0 0 30px;
+  max-width: 1024px;
 }
 
 .copy {
@@ -187,6 +205,7 @@ img {
   font-weight: 400;
   font-size: 1.2rem;
   color: var(--text-100);
+  margin-bottom: 10px;
 }
 
 .copy-text {
